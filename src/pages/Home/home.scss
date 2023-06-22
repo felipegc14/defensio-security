@@ -1,0 +1,121 @@
+.home-container{
+    min-height: 100vh;
+    height: 100%;
+}
+/* .home-title{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+    color: white;
+    background-image: url(@/assets/hometitle.png);
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    width: 100vw;
+} */
+#carouselExampleFade{
+    display: flex;
+    width: 100%;
+    z-index: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    position: relative;
+    height: 1000px;
+}
+.h1Home{
+    font-weight: 600;
+}
+#carouselImage img{
+    object-fit: cover;
+    height: 100%;
+}
+#carouselImage{
+    height: 100%;
+}
+.carousel-caption{
+    top: 0px;
+}
+.hvr-sweep-to-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 15px 30px;
+    color: white; 
+    border: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #22A39F;
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    transition: color 0.2s;
+}
+.hvr-sweep-to-right:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    z-index: -1;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform 0.2s ease-out;
+}
+.hvr-sweep-to-right:hover {
+    color: black;
+}
+.hvr-sweep-to-right:hover:before {
+    transform: scaleX(1);
+}
+.blog-section{
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    padding: 50px 100px;
+}
+.div-blog{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+}
+.card{
+    height: 25rem;
+    width: 18rem;
+}
+.card-img-top{
+    height: 12rem;
+    object-fit: cover;
+}
+.button-card{
+    background-color: #22A39F;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.button-card:hover{
+    background-color: #22a39fc2;
+    color: white;
+}
+@media (max-width:992px) {
+    .h1Home{
+        font-size: 30px;
+    }
+    .hvr-sweep-to-right{
+        gap: 3px;
+    padding: 10px 20px;
+    }
+    .carousel-caption{
+        top: 50px;
+    }
+}
+@media (max-width:678px) {
+    #carouselImage img{
+        height: 800px;
+        object-fit: cover;
+    }
+}

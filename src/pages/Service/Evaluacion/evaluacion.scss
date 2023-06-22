@@ -1,0 +1,95 @@
+.service-container{
+    min-height: 100vh;
+    height: 100%;
+}
+.service-title{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    background-image: url(@/assets/hometitle.png);
+    box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.703);
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    width: 100vw;
+}
+.service-section-container{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Source Sans Pro', sans-serif;
+    gap: 70px;
+    margin: 100px 200px;
+    h3{
+        font-weight: 600;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #327FEF;
+        // border-bottom: 2px solid #22A39F;
+    }
+}
+.service-contact-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    h2{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    h5{
+        font-size: 22px;
+    }
+}
+.section-service-par, .section-service-impar{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 50px 0;
+    span{
+        font-weight: 600;
+        font-size: 22px;
+    }
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hvr-sweep-to-right {
+    display: flex;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    align-items: center;
+    gap: 5px;
+    padding: 15px 30px;
+    width: 180px;
+    color: white; 
+    border: none;
+    background: #327FEF;
+    // background: #22A39F;
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    transition: color 0.2s;
+}
+.hvr-sweep-to-right:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: #1A181C;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform 0.2s ease-out;
+}
+.hvr-sweep-to-right:hover {
+    color: white;
+}
+.hvr-sweep-to-right:hover:before {
+    transform: scaleX(1);
+}

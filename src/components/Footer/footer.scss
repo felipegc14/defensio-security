@@ -1,0 +1,64 @@
+.footer-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    height: 100%;
+    padding:  50px 150px;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    // font-family: 'Roboto' sans-serif;
+    background-color: #1A191D;
+}
+.sobre-nosotros, .contactanos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 70%;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: .4px;
+}
+.sobreh2{
+    //color: #22A39F;
+    color: #327FEF;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: .4px;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.datos-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.logoRedes{
+    color: grey;
+}
+
+@media (max-width:678px) {
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .sobre-nosotros, .contactanos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70%;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: .4px;
+    }
+    .datos-contacto{
+        display: flex;
+        gap: 10px;
+    }
+}

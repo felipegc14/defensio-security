@@ -1,0 +1,174 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 1;
+  background-color: transparent;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navColor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-transition: .8s ease-in;
+  transition: .8s ease-in;
+  position: fixed;
+  z-index: 1;
+  background-color: #1A181C;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav-container {
+  width: 90%;
+  padding: 20px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #327FEF;
+}
+
+.logo:hover {
+  color: white;
+}
+
+.logoImg {
+  width: 100%;
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.container-links {
+  padding: 30px 0 30px 0;
+}
+
+.collapse {
+  height: 100px;
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  color: white;
+  font-weight: 600;
+}
+
+.link:active {
+  color: white;
+  border-top: 4px solid white;
+}
+
+#navbarScrollingDropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  color: white;
+}
+
+#navbarScrollingDropdown::after {
+  margin: 5px 0 0 5px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.link:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: white;
+  border-top: 4px solid white;
+}
+
+.linkDrop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  color: white;
+  font-weight: 600;
+}
+
+.linkDrop:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: white;
+  border-top: 4px solid white;
+}
+
+.dropdown-item:hover {
+  background-color: #327FEF;
+  color: white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@media (max-width: 992px) {
+  .nav-container {
+    padding: 0px 20px;
+    width: 100%;
+  }
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: white;
+  }
+  .navColor {
+    background-color: white;
+  }
+}
+/*# sourceMappingURL=nav.css.map */
